@@ -1,0 +1,110 @@
+:root{
+    --background:#0f172a;
+    --blue-color:#2563eb;
+    --blue-color-hover:#283d6d8e;
+    --text-color:#f8fafc;
+}
+
+.started_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.started_container .name_of_project {
+    width: 100%;
+    padding: 0rem 1rem;
+    text-align: center;
+    line-height: 2;
+    color:var(--text-color);
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.started_container .site_icon {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--blue-color);
+    animation: movedown 1.7s linear infinite;
+}
+
+/* keyframe for the main icon */
+
+@keyframes movedown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.started_container .start {
+    margin-top: 8rem;
+}
+.started_container .start span{
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius:50% ;
+    background-color:var(--blue-color-hover);
+    animation: changeBackground 1.1s linear infinite;
+}
+
+.started_container .start span:nth-child(1) {
+    animation-delay: 0s;
+}
+.started_container .start span:nth-child(2) {
+    animation-delay: 1s;
+}
+.started_container .start span:nth-child(3) {
+    animation-delay: 2s;
+}
+@keyframes changeBackground {
+    from {
+        background-color: var(--blue-color-hover);
+    }
+    to {
+        background-color: var(--blue-color);
+    }
+}
+
+.started_container .start span:nth-child(2) {
+    margin: 0 1rem 0;
+}
+
+
+/* media Queres */
+
+@media (max-width:650px) {
+    .started_container .name_of_project {
+        font-size: 1.6rem;
+    }
+    .started_container .site_icon {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    .started_container .start {
+        margin-top: 6rem;
+    }
+}
+@media (max-width:360px) {
+    .started_container .name_of_project {
+        font-size: 1.5rem;
+    }
+    .started_container .site_icon {
+        font-size: 3rem;
+        font-weight: 800;
+    }
+    .started_container .start {
+        margin-top: 6rem;
+    }
+}
