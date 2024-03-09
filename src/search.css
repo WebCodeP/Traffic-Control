@@ -4,7 +4,8 @@
     --blue-color-hover:#283d6d8e;
     --text-color:#f8fafc;
     --text-color-two:#818181;
-    --back:#333;
+    --back:#222121;
+    --white-color:white;
 }
 
 .search_bar {
@@ -12,7 +13,7 @@
     top:1.6rem;
     left:2rem;
     cursor: pointer;
-    background-color:#0f172a73 ;
+    background-color:var(--white-color) ;
     z-index:99999;
     height: 2.7rem;
     width:2.7rem ;
@@ -20,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 1px 3px var(--back);
 }
 
 .search_bar input {
@@ -37,7 +39,7 @@
 }
 
 .search_bar .search_icon {
-    color: white;
+    color:var(--back);
     font-size: 1.6rem;
 }
 
@@ -53,7 +55,7 @@
     
     }
     .search_bar .search_icon {
-        color: white;
+        color:var(--back);
         font-size: 1.4rem;
     }
 }
