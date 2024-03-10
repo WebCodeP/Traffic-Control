@@ -2,6 +2,8 @@ import React from 'react';
 import './started.css';
 import { FaMapMarkerAlt } from "react-icons/fa";
 
+
+
 const Started = () => {
   return (
     <div className='started_container'>

@@ -23,8 +23,8 @@
 }
 
 
-
 .navbar  .add_line {
+
     height: 100%;
     color: var(--text-color);
     font-size: 1.8rem;
@@ -74,3 +74,64 @@
 
 
 
+@media (max-width:660px) {
+    
+.navbar {
+    top: calc(100% - 3rem);
+    height: 3rem;
+}
+    
+}
+
+@media (max-width:360px) {
+    
+.navbar {
+    top: calc(100% - 2.6rem);
+    height: 2.6rem;
+}
+    
+}
+
+
+
+
+
+
+
+
+/* DropMenu stylesheet  */
+.drop_menu {
+    position: fixed;
+    z-index: 9998;
+    width: 100vw;
+    top: calc(100% - 15rem);
+    left: 0rem;
+    height: 15rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    background-color:white;
+    transition: all 0.3s linear;
+}
+
+
+
+.drop_menu .down {
+    text-align: center;
+    margin-inline: auto;
+    margin-top: 1rem;
+    width: 30px;
+    height: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:var(--text-color-two) ;
+}
+
+
+
+@media (max-width:360px){
+    .drop_menu {
+        border-radius: 1.3rem 1.3rem 0 0;
+    }
+    .drop_menu .down {
+        width: 20px;
+    }
+}

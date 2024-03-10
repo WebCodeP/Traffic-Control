@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import { IoMdAddCircleOutline } from "react-icons/io";
 import { SiChase } from "react-icons/si";
@@ -9,19 +9,23 @@ import Dropmenu from './Dropmenu';
 
 
 const Navbar = () => {
-
+let [uptop , setupTop] = useState(100);
+  function upDrop()
+  {
+      setupTop(70);
+  }
   return (
     <>
 
     <div className='navbar'>
-
-            <FaLayerGroup className='layers'/>
-            <Dropmenu/>
+            <IoMdAddCircleOutline className='add_line' onClick={upDrop}/>
+       
             <SiChase className='track'/>
             <FaBell className='bell'/>
             <FaMapMarkerAlt className='mark'/>
-            <IoMdAddCircleOutline className='add_line'/>
+            <FaLayerGroup  className='layers' />
     </div>
+   <Dropmenu topDrop={uptop} />
  
     </>
   )

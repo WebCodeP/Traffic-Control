@@ -16,7 +16,7 @@ const Main = () => {
   }
   return (
     <div className='main'>
-      <Map zoom={zoom} className="map_page"/> 
+      <Map addzoom={zoom} className="map_page"/> 
       <Navber className="navbar_section"/>
       <Search/>
       <div className='zoom'>

@@ -44,7 +44,26 @@
 color: var(--blue-color);
 }
 
-
+@media (max-width:660px) {
+    .zoom {
+        flex-direction: column;
+        top:4rem;
+        height: 5.4rem;
+        width: 2.5rem;
+        left: calc(100% - 3.5rem);
+        padding-top: 0.7rem;
+    }
+    .zoom_in {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all .3s linear;
+       }
+       .zoom_out {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all .3s linear;
+       }
+}
 
 @media (max-width:360px) {
     .zoom {

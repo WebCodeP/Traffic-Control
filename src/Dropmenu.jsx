@@ -1,8 +1,8 @@
 import React from 'react';
-import './dropmenu.css';
-const Dropmenu = () => {
+const Dropmenu = ({topDrop}) => {
+  console.log(topDrop);
   return (
-    <div className='drop_menu'>
+    <div style={{top:`${topDrop}%`}} className='drop_menu'>
       <p className='down'></p>
      </div>
   )
