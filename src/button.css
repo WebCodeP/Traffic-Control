@@ -1,0 +1,114 @@
+
+
+:root{
+    --background:#0f172a;
+    --blue-color:#2563eb;
+    --blue-color-hover:#283d6d8e;
+    --text-color:#f8fafc;
+    --text-color-two:#818181;
+    --back:#333;
+}
+.add_button {
+    z-index: 9999;
+    position: fixed;
+    top:6rem;
+    left:1rem;
+    cursor: pointer;
+    background-color: white;
+    height: 2.7rem;
+    color: var(--back);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 17px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 2px rgb(0,0,0,0.2);
+}
+
+
+.add_button .add_line {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.add_button .menu {
+    position: absolute;
+    left:5rem;
+    top:-0.5rem;
+    width: 6rem;
+    height: 8rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+    display: none;
+    box-shadow: 1px 1px 2px rgb(0,0,0,0.2);
+}
+
+.add_button:hover .menu {
+    display: block;
+}
+
+
+.add_button .menu::after {
+    content: "";
+    border: 1rem solid transparent;
+    border-color: transparent white transparent transparent;
+    position: absolute;
+    top:1rem;
+    left: -2rem;
+}
+
+.add_button .menu .add_line {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--back);
+    padding: .5rem 0rem;
+}
+
+.add_button .menu .add_line span{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-left: 0.7rem;
+}
+
+.add_button .menu .add_line .icon_path {
+    margin-left: 0.3rem;
+}
+
+.add_button .menu .add_car {
+    display: flex;
+    align-items: center;
+    color: var(--back);
+    padding: .5rem 0rem;
+}
+
+.add_button .menu .add_car span {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-left: 0.7rem;
+}
+
+.add_button .menu .add_car .icon_car {
+    margin-left: 0.3rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:360px) {
+    .add_button {
+        top:4rem;
+        height: 2.4rem;
+    }
+    .add_button .add_line {
+        font-size: 1.4rem;
+    }
+}
