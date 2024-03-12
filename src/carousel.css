@@ -1,0 +1,111 @@
+:root{
+    --background:#0f172a;
+    --blue-color:#2563eb;
+    --blue-color-hover:#283d6d8e;
+    --text-color:#f8fafc;
+    --text-color-two:#818181;
+    --back:#333;
+    --hover:#74C0FC;
+}
+
+
+
+.carousel {
+    position: fixed;
+    height: 3rem;
+    width: 100vw;
+    top:calc(100% - 4rem);
+    z-index: 9999;
+    background-color: transparent;
+    cursor: grab;
+    overflow: hidden;
+    right: 0;
+    left: 0;
+    text-align: center;
+    direction: rtl;
+}
+
+.carousel .inner_carousel {
+    height: 100%;
+    display: flex;
+    background-color: transparent;
+    width:fit-content;
+    padding: 0rem 7rem;
+}
+.carousel .inner_carousel .item{
+    height: 100%;
+    background-color: transparent;
+    margin-left: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .inner_carousel .item button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    border-radius: 2rem;
+    color:var(--back);
+    box-shadow: 1px 1px 2px rgb(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.3s linear;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    gap:0.75rem;
+}
+
+.carousel .inner_carousel .item button:hover {
+    color:#3532f1;
+    background-color:#b4d0e688;
+}
+
+
+
+
+@media (max-width:669px) {
+
+    .carousel .inner_carousel {
+    padding: 0rem 5rem;
+    }
+    .carousel .inner_carousel .item{
+        margin-left: 5rem;
+    }
+    .carousel .inner_carousel .item button {
+        padding: 0.4rem 1.3rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 1.8rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media (max-width:360px) {
+
+    .carousel .inner_carousel {
+    padding: 0rem 2rem;
+    }
+    .carousel .inner_carousel .item{
+        margin-left: 2rem;
+    }
+    .carousel .inner_carousel .item button {
+        padding: 0.2rem 0.8rem;
+        font-size: 1rem;
+        font-weight: 400;
+        border: none;
+        border-radius: 1rem;
+    }
+
+
+}

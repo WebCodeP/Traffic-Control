@@ -7,6 +7,7 @@ import { RiZoomInLine } from "react-icons/ri";
 import { RiZoomOutLine } from "react-icons/ri";
 import ButtonAdd from './ButtonAdd';
 import { FaLayerGroup } from "react-icons/fa";
+import Carousel from './Carousel';
 const Main = () => {
  
 
@@ -26,6 +27,7 @@ const Main = () => {
        <div className="layer_map">
          <FaLayerGroup  className='layer_icon'/>
        </div>
+      <Carousel/>
     </div>
   );
 }
