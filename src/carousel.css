@@ -99,13 +99,13 @@
 @media (max-width:480px) {
 
     .carousel .inner_carousel {
-    padding: 0rem 3rem;
+    padding: 0rem 2.6rem;
     }
     .carousel .inner_carousel .item{
-        margin-left: 3rem;
+        margin-left: 2.8rem;
     }
     .carousel .inner_carousel .item button {
-        padding: 0.3rem 1.1rem;
+        padding: 0.5rem 1rem;
         font-size: 1.1rem;
         font-weight: 500;
         border: none;
@@ -119,13 +119,13 @@
 @media (max-width:360px) {
 
     .carousel .inner_carousel {
-    padding: 0rem 2rem;
+    padding: 0rem 1.8rem;
     }
     .carousel .inner_carousel .item{
-        margin-left: 2rem;
+        margin-left: 1.6rem;
     }
     .carousel .inner_carousel .item button {
-        padding: 0.2rem 0.8rem;
+        padding: 0.5rem 0.8rem;
         font-size: 1rem;
         font-weight: 400;
         border: none;
