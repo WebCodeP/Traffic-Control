@@ -10,7 +10,7 @@ const RouterPage = () => {
 
   const [showPage , setShowPage] = useState(true);
   useEffect(()=>{
-    setTimeout(()=>{setShowPage(false)},1000);
+    setTimeout(()=>{setShowPage(false)},4000);
   },[]);
 
 
