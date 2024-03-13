@@ -17,8 +17,8 @@ const RouterPage = () => {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={ showPage?<Started/>:<Main/>}/>
-        <Route path='/Add' element={<Addcar/>}/>
+        <Route path='/Traffic-Control' element={ showPage?<Started/>:<Main/>}/>
+        <Route path='/Traffic-Control/Add' element={<Addcar/>}/>
       </Routes>
     </Router>
   )

@@ -18,7 +18,7 @@ const ButtonAdd = () => {
             <span>مسار</span>
          </Link>
 
-         <Link to="./Add" className="add_car">
+         <Link to="/Traffic-Control/Add" className="add_car">
             <MdDirectionsBusFilled className='icon_car'/>
             <span>مركبة</span>
          </Link>
