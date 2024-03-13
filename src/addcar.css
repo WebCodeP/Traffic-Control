@@ -19,7 +19,6 @@
 }
 
 
-
 .add_conatiner{
  background-color:#0f172a;
  width: 100vw;
@@ -30,9 +29,9 @@
 }
 
 .add_conatiner .inner_div {
-    background-color:white;
+    background-color: #121a2c;
     width: 40rem;
-    height: 20rem;
+    height: 35rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -49,6 +48,11 @@
     z-index: 999;
 }
 
+.add_conatiner .inner_div form .title {
+ font-size: 1.6rem;
+font-weight: 300;
+color:#535353;
+}
 .add_conatiner .inner_div form .link {
     margin-top:1rem ;
     display: flex;
@@ -83,11 +87,38 @@
     justify-content: center;
 }
 
+.add_conatiner .inner_div form .last_form {
+
+margin-top: 1.5rem;
+color:#535353;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+.add_conatiner .inner_div form .last_form span {
+    font-size: 1.3rem;
+}
+
+.add_conatiner .inner_div form .last_form .add_path {
+    margin-right: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.add_conatiner .inner_div form .last_form .link_path {
+  
+    font-size: 1.3rem;
+    font-weight: 300;
+    color:var(--blue-color);
+  
+}
 .add_conatiner .inner_div form div .date {
     direction: rtl;
+    color: white;
 }
 .add_conatiner .inner_div form div .ref {
-margin-right: 1rem;
+margin-right: 2rem;
 cursor: pointer;
 font-size: 1.6rem;
 font-weight: 300;
@@ -99,7 +130,7 @@ transition: all 0.3s linear;
 }
 
 .add_conatiner .inner_div form div .icons {
-margin-left: 1rem;
+margin-left: 2rem;
 cursor: pointer;
 font-size: 1.6rem;
 font-weight: 300;
@@ -114,7 +145,7 @@ transition: all 0.3s linear;
     transform: rotate(360deg);
 }
 .add_conatiner .inner_div form div select {
-    width: 70%;
+    width: 65%;
     border: none;
     outline: none;
     padding: 0.6rem 0.5rem;
@@ -132,17 +163,18 @@ transition: all 0.3s linear;
 .add_conatiner .inner_div form div select:focus {
     border-color: var(--blue-color);
     transform: scale(1.1);
+    background-color: #05215e71;
 }
 .add_conatiner .inner_div form div select option {
-    background-color:white;
-    color: var(--back);
+    background-color:hsl(222, 42%, 12%);
+    color:white;
     cursor: pointer;
     width: 100%;
 }
 
 
 .add_conatiner .inner_div form div input {
-    width: 70%;
+    width: 65%;
     border: none;
     color: white;
     outline: none;
@@ -159,7 +191,7 @@ transition: all 0.3s linear;
 .add_conatiner .inner_div form div input:focus {
     border-color: var(--blue-color);
     transform: scale(1.1);
-  
+    background-color: #05215e71;
 }
 
 .add_conatiner .inner_div form div input::placeholder {
@@ -175,14 +207,19 @@ transition: all 0.3s linear;
     font-size: 1.3rem;
     border: none;
     background-color: var(--blue-color);
-
+    transition: all 0.3s linear;
+}
+.add_conatiner .inner_div form div .add:hover {
+    background-color: #05215e;
 }
 
 .add_conatiner .inner_div form .button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2.4rem;
+    margin-top: 2rem;
+    width: 65%;
+    margin-inline: auto;
 }
 
 .add_conatiner .inner_div form div .delet {
@@ -193,7 +230,12 @@ transition: all 0.3s linear;
     font-size: 1.3rem;
     border: none;
     background-color: #2563eb;
-    
+    transition: all 0.3s linear;
+
+}
+
+.add_conatiner .inner_div form div .delet:hover {
+    background-color: #05215e;
 }
 
 
@@ -201,9 +243,13 @@ transition: all 0.3s linear;
 /* media guerq for add car page  */
 
 @media (max-width:669px) {
+    .add_conatiner .inner_div form .link {
+        margin-bottom: 0.5rem;
+        margin-top: 0.2rem;
+    }
     .add_conatiner .inner_div {
-        width: 25rem;
-        height: 29rem;
+        width: 30rem;
+        height: 34rem;
         border-radius: 1rem;
   
     }
@@ -211,7 +257,7 @@ transition: all 0.3s linear;
         border-radius: 1rem;
     }
     .add_conatiner .inner_div form div {
-        margin-top: 1.1rem;
+        margin-top: 1rem;
     }
     .add_conatiner .inner_div form div select {
        
@@ -222,12 +268,11 @@ transition: all 0.3s linear;
     }
 }
 
-@media (max-width:460px) {
+@media (max-width:507px) {
 
-       
   
     .add_conatiner .inner_div form .link {
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
         margin-top: 2;
     }
     .add_conatiner .inner_div form .go_home {
@@ -270,8 +315,6 @@ transition: all 0.3s linear;
         width: 70%;
         font-size: 1rem;
         border: none;
-        position: absolute;
-        color: var(--back);
     }
 
     .add_conatiner .inner_div form div input {
@@ -315,6 +358,38 @@ transition: all 0.3s linear;
     text-align: center;
     margin-inline: auto;
 }
+.add_conatiner .inner_div form div .ref {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+
+    }
+    
+    .add_conatiner .inner_div form div .icons {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    }
+    .add_conatiner .inner_div form .last_form {
+
+        margin-top: 3rem;
+       
+        }
+        
+        .add_conatiner .inner_div form .last_form span {
+            font-size: 1rem;
+        }
+        
+        .add_conatiner .inner_div form .last_form .add_path {
+            margin-right: 0.8rem;
+            font-size: 1rem;
+        }
+        
+        .add_conatiner .inner_div form .last_form .link_path {
+          
+            font-size: 1rem;
+            font-weight: 300;
+            color:var(--blue-color);
+          
+        }
 }
 
 @media (max-width:360px) {
@@ -322,7 +397,12 @@ transition: all 0.3s linear;
         background-color:#0f172a;
     }
     .add_conatiner .inner_div form .link {
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
         margin-top: 2;
     }
+    
+.add_conatiner .inner_div form .title {
+    font-size: 1rem;
+    font-weight: 600;
+   }
 }

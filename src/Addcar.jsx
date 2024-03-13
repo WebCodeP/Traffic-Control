@@ -9,6 +9,7 @@ import { MdGpsFixed } from "react-icons/md";
 import { MdOutlineDateRange } from "react-icons/md";
 import { MdOutlineBusAlert } from "react-icons/md";
 import { MdOutlineSubtitles } from "react-icons/md";
+import { FaLink } from 'react-icons/fa6';
 const Addcar = () => {
   return (
     <div  className='add_conatiner'>  
@@ -18,7 +19,7 @@ const Addcar = () => {
             <Link to="/" className='more'><IoIosMore/></Link>
             <Link to="/" className='go_home'><FaArrowRightLong /></Link>
           </header>
-          
+          <p className='title'>اضافة عربة الى مسار معين على الخريطة</p> 
           <div>
               <IoMdRefresh className='ref'/>
               <input type="text" id='car_id' placeholder='رقم السيارة'/>
@@ -64,7 +65,8 @@ const Addcar = () => {
             <input type="submit"  value="تراجع" className='delet'/>
             <input type="submit"  value="اضافة" className='add'/>
           </div>
-
+           
+           <div className='last_form'><Link className='add_path'>أضافة مسار</Link><span>لاضافة مسار الى الخريطة <FaLink className='link_path'/></span></div>
         </form>
        </div>
     </div>

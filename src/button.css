@@ -80,8 +80,8 @@
 }
 
 .add_button .menu .add_line span{
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 600;
     padding-left: 0.7rem;
     color:white;
 }
@@ -109,8 +109,8 @@
 }
 
 .add_button .menu .add_car span {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 600;
     padding-left: 0.7rem;
     color: white;
 }
