@@ -126,8 +126,13 @@ transition: all 0.3s linear;
     cursor: pointer;
     color:#818181;
     font-weight: 600;
+    transition: all 0.3s linear;
 }
 
+.add_conatiner .inner_div form div select:focus {
+    border-color: var(--blue-color);
+    transform: scale(1.1);
+}
 .add_conatiner .inner_div form div select option {
     background-color:white;
     color: var(--back);
@@ -148,10 +153,13 @@ transition: all 0.3s linear;
     border-radius: 0.4rem;
     background-color: transparent;
     border: 1px solid var(--blue-color-hover);
+    transition: all 0.3s linear;
 }
 
 .add_conatiner .inner_div form div input:focus {
     border-color: var(--blue-color);
+    transform: scale(1.1);
+  
 }
 
 .add_conatiner .inner_div form div input::placeholder {
