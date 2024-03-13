@@ -37,9 +37,11 @@
     position: absolute;
     left:5rem;
     top:-0.5rem;
-    width: 6rem;
-    height: 8rem;
-    background-color: white;
+    width: 8rem;
+    height: 10rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    background-color:#333333cc;
     border-radius: 0.5rem;
     transition: all 0.3s linear;
     display: none;
@@ -54,7 +56,7 @@
 .add_button .menu::after {
     content: "";
     border: 1rem solid transparent;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #333333cc transparent transparent;
     position: absolute;
     top:1rem;
     left: -2rem;
@@ -62,39 +64,61 @@
 }
 
 .add_button .menu .add_line {
+    background-color: #2563eb;
     margin-top: 1rem;
     display: flex;
     align-items: center;
     color: var(--back);
-    padding: .5rem 0rem;
+    padding: .2rem 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+    text-decoration: none;
+}
+
+.add_button .menu .add_line:hover {
+    background-color: #0a46c7;
 }
 
 .add_button .menu .add_line span{
     font-size: 1.5rem;
     font-weight: 800;
     padding-left: 0.7rem;
+    color:white;
 }
 
 .add_button .menu .add_line .icon_path {
     margin-left: 0.3rem;
+    font-size: 1.6rem;
+    color: white;
 }
 
 .add_button .menu .add_car {
+    background-color: var(--blue-color);
     display: flex;
+    transition: all 0.3s linear;
     align-items: center;
     color: var(--back);
-    padding: .5rem 0rem;
+    padding: .2rem 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.add_button .menu .add_car:hover {
+    background-color:#0a46c7 ;
 }
 
 .add_button .menu .add_car span {
     font-size: 1.5rem;
     font-weight: 800;
     padding-left: 0.7rem;
+    color: white;
 }
 
 .add_button .menu .add_car .icon_car {
     margin-left: 0.3rem;
     font-size: 1.5rem;
+    color: white;
 }
 
 

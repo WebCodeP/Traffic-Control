@@ -90,6 +90,24 @@
 
 
 
+@media (max-width:480px) {
+
+    .carousel .inner_carousel {
+    padding: 0rem 3rem;
+    }
+    .carousel .inner_carousel .item{
+        margin-left: 3rem;
+    }
+    .carousel .inner_carousel .item button {
+        padding: 0.3rem 1.1rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 1.4rem;
+    }
+
+
+}
 
 
 @media (max-width:360px) {
