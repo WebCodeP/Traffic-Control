@@ -8,13 +8,13 @@ import 'leaflet-compass/dist/leaflet-compass.min.css';
 import 'leaflet-compass/dist/leaflet-compass.min.js';
 
 import site from './assets/3d-map (2).png';
-
+import bus from './assets/bus.png';
 import { Icon } from 'leaflet';
 
 const Map = () => {
 const posation = [34.7325,36.7367];
 const customIcon = new Icon({
-iconUrl:site,
+iconUrl:bus,
 iconSize: [32, 32],
 });
   // path one
