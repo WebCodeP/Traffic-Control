@@ -38,16 +38,17 @@
     z-index: 9999;
     left:0rem;
     top:0rem;
-    width: 8rem;
-    height: 10rem;
+    width: 12rem;
+    height: 8rem;
     padding: 1rem;
-    padding-top: 2.5rem;
-    background-color:white;
+    background-color:#121a2c;
     border-radius: 0.5rem;
     transition: all 0.3s linear;
     display: none;
     box-shadow: 1px 1px 2px rgb(0,0,0,0.2);
 }
+
+
 
 .add_button:hover .menu {
     display: block;
@@ -55,22 +56,21 @@
 
 
 .add_button .menu .add_line {
-    background-color:#202a41;
-    margin-top: 1rem;
     display: flex;
     align-items: center;
-    color: var(--back);
+    justify-content: space-between;
+
     padding: .2rem 0.5rem;
     border-radius: 0.5rem;
     transition: all 0.3s linear;
     text-decoration: none;
 }
 .add_button .menu .add_line:hover {
-    background-color:#0f172ac7 ;
+    background-color:#05215e2f ;
 }
 
 .add_button .menu .add_line span{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding-left: 0.7rem;
     color:white;
@@ -78,16 +78,15 @@
 
 .add_button .menu .add_line .icon_path {
     margin-left: 0.3rem;
-    font-size: 1.6rem;
-    color: white;
+    font-size: 2rem;
+    color:white;
 }
 
 .add_button .menu .add_car {
-    background-color: var(--blue-color);
     display: flex;
     transition: all 0.3s linear;
     align-items: center;
-    color: var(--back);
+    justify-content: space-between;
     padding: .2rem 0.5rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
@@ -95,11 +94,11 @@
 }
 
 .add_button .menu .add_car:hover {
-    background-color:#0a46c7 ;
+    background-color:#05215e71 ;
 }
 
 .add_button .menu .add_car span {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding-left: 0.7rem;
     color: white;
@@ -107,8 +106,8 @@
 
 .add_button .menu .add_car .icon_car {
     margin-left: 0.3rem;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.8rem;
+    color:white;
 }
 
 
@@ -127,8 +126,59 @@
     }
     .add_button .add_line {
         font-size: 1.6rem;
-
     }
+    .add_button .menu {
+       
+        width: 10rem;
+        height: 7rem;
+        padding: 1rem;
+        border-radius: 0.3rem;
+    
+    }
+    
+    
+    
+    .add_button .menu .add_line {
+     
+        padding: .1rem 0.4rem;
+        border-radius: 0.4rem;
+       
+    }
+ 
+    
+    .add_button .menu .add_line span{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    .add_button .menu .add_line .icon_path {
+    
+        font-size: 1.7rem;
+        
+    }
+    
+    .add_button .menu .add_car {
+    
+        padding: .1rem 0.4rem;
+        border-radius: 0.4rem;
+    
+    }
+    
+   
+    
+    .add_button .menu .add_car span {
+        font-size: 1.2rem;
+        font-weight: 500;
+    
+    }
+    
+    .add_button .menu .add_car .icon_car {
+     
+        font-size: 1.5rem;
+    
+    }
+    
+    
 }
 
 

@@ -405,4 +405,26 @@ transition: all 0.3s linear;
     font-size: 1rem;
     font-weight: 600;
    }
+
+   .add_conatiner .inner_div form .last_form {
+    margin-top: 3.2rem;
+   
+    }
+    
+    .add_conatiner .inner_div form .last_form span {
+        font-size: 0.8rem;
+    }
+    
+    .add_conatiner .inner_div form .last_form .add_path {
+        margin-right: 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .add_conatiner .inner_div form .last_form .link_path {
+      
+        font-size: 0.8rem;
+        font-weight: 300;
+        color:var(--blue-color);
+      
+    }
 }
