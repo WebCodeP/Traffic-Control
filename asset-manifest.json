@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Traffic-Control/static/css/main.9c933f51.css",
-    "main.js": "/Traffic-Control/static/js/main.e46476c5.js",
+    "main.css": "/Traffic-Control/static/css/main.dc6ff999.css",
+    "main.js": "/Traffic-Control/static/js/main.1b0392ed.js",
     "index.html": "/Traffic-Control/index.html",
-    "main.9c933f51.css.map": "/Traffic-Control/static/css/main.9c933f51.css.map",
-    "main.e46476c5.js.map": "/Traffic-Control/static/js/main.e46476c5.js.map"
+    "main.dc6ff999.css.map": "/Traffic-Control/static/css/main.dc6ff999.css.map",
+    "main.1b0392ed.js.map": "/Traffic-Control/static/js/main.1b0392ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c933f51.css",
-    "static/js/main.e46476c5.js"
+    "static/css/main.dc6ff999.css",
+    "static/js/main.1b0392ed.js"
   ]
 }
