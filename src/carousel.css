@@ -20,7 +20,7 @@
     position: fixed;
     height: 3rem;
     width: 100vw;
-    top:calc(100% - 4rem);
+    top:calc(100% - 5rem);
     z-index: 9999;
     background-color: transparent;
     cursor: grab;

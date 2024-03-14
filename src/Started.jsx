@@ -8,7 +8,7 @@ const Started = () => {
   return (
     <div className='started_container'>
       <FaMapMarkerAlt className='site_icon'/>
-      <div className='name_of_project'>Manage And Track Public Transportation</div>
+      <div className='name_of_project'>ادارة وتعقب وسائل النقل العامة</div>
       <div className='start'>
          <span></span>
          <span></span>

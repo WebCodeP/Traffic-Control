@@ -17,7 +17,7 @@ const Addcar = () => {
         <form action="" method="post">
           <header className='link'>
             <Link to="/" className='more'><IoIosMore/></Link>
-            <Link to="/" className='go_home'><FaArrowRightLong /></Link>
+            <Link to="/Traffic-Control" className='go_home'><FaArrowRightLong /></Link>
           </header>
           <p className='title'>اضافة عربة الى مسار معين على الخريطة</p> 
           <div>
@@ -66,7 +66,7 @@ const Addcar = () => {
             <input type="submit"  value="اضافة" className='add'/>
           </div>
            
-           <div className='last_form'><Link className='add_path'>أضافة مسار</Link><span>لاضافة مسار الى الخريطة <FaLink className='link_path'/></span></div>
+           <div className='last_form'><Link className='add_path'>أضافة مسار</Link><span>لاضافة مسار الى الخريطة انقر على   <FaLink className='link_path'/></span></div>
         </form>
        </div>
     </div>

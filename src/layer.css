@@ -1,0 +1,53 @@
+
+:root{
+    --background:#0f172a;
+    --blue-color:#2563eb;
+    --blue-color-hover:#283d6d8e;
+    --text-color:#f8fafc;
+    --text-color-two:#818181;
+    --back:#504c4c;
+    --white-color:white;
+}
+
+
+
+.layer_map {
+    padding: 2px 14px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgb(0,0,0,0.2);
+    cursor: pointer;
+    background-color: white;
+    height: 3.2rem;
+    width: 3.2rem;
+    position: fixed;
+    z-index: 9999;
+    top:10.5rem;
+    left:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s linear;
+}
+
+.layer_map .layer_icon {
+  
+    font-size: 1.4rem;
+    color:var(--back) ;
+    font-weight: 400;
+    
+}
+.layer_map .menu_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12rem;
+    height: 10rem;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    background-color: white;
+    visibility: hidden;
+}
+
+.layer_map:hover .menu_layer {
+    visibility: visible;
+}

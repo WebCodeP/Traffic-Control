@@ -10,38 +10,39 @@
     --hover:#74C0FC;
 }
 .add_button {
-    z-index: 9999;
+    z-index: 99999;
     position: fixed;
     top:6rem;
     left:1rem;
     cursor: pointer;
     background-color: white;
-    height: 2.7rem;
+    height: 3.2rem;
+    width: 3.2rem;
     color: var(--back);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px 17px;
-    border-radius: 30px;
-    box-shadow: 1px 1px 2px rgb(0,0,0,0.2);
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgb(0,0,0,0.2);
     transition: all 0.3s linear;
 }
 
 
 .add_button .add_line {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 .add_button .menu {
     position: absolute;
-    left:5rem;
-    top:-0.5rem;
+    z-index: 9999;
+    left:0rem;
+    top:0rem;
     width: 8rem;
     height: 10rem;
     padding: 1rem;
     padding-top: 2.5rem;
-    background-color:#333333cc;
+    background-color:white;
     border-radius: 0.5rem;
     transition: all 0.3s linear;
     display: none;
@@ -53,18 +54,8 @@
 }
 
 
-.add_button .menu::after {
-    content: "";
-    border: 1rem solid transparent;
-    border-color: transparent #333333cc transparent transparent;
-    position: absolute;
-    top:1rem;
-    left: -2rem;
-    transition: all 0.3s linear;
-}
-
 .add_button .menu .add_line {
-    background-color: #2563eb;
+    background-color:#202a41;
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -74,9 +65,8 @@
     transition: all 0.3s linear;
     text-decoration: none;
 }
-
 .add_button .menu .add_line:hover {
-    background-color: #0a46c7;
+    background-color:#0f172ac7 ;
 }
 
 .add_button .menu .add_line span{
@@ -124,7 +114,22 @@
 
 
 
+@media (max-width:669px) {
+    .add_button {
+        top:5rem;
+    }
+}
 
+@media (max-width:467px) {
+    .add_button {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    .add_button .add_line {
+        font-size: 1.6rem;
+
+    }
+}
 
 
 
@@ -132,8 +137,7 @@
 
 @media (max-width:360px) {
     .add_button {
-        top:4rem;
-        height: 2.4rem;
+        top:4.5rem;
     }
     .add_button .add_line {
         font-size: 1.4rem;

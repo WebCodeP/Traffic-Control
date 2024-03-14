@@ -87,32 +87,9 @@ color: var(--blue-color);
     color: #5f5c5c;
 }
 
-.layer_map {
-    z-index: 9999;
-    position: fixed;
-    top:10.5rem;
-    left:1rem;
-    cursor: pointer;
-    background-color: white;
-    height: 2.7rem;
-    color: var(--back);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 17px;
-    border-radius: 30px;
-    box-shadow: 1px 1px 2px rgb(0,0,0,0.2);
-}
-
-.layer_map .layer_icon {
-    font-size: 1.6rem;
-    color: var(--blue-color);
-    font-weight: 600;
-}
 
 
-
-@media (max-width:660px) {
+@media (max-width:669px) {
     .zoom {
         flex-direction: column;
         top:4rem;

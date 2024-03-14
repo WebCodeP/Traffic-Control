@@ -6,14 +6,15 @@ import { FaBell } from "react-icons/fa";
 import { RiZoomInLine } from "react-icons/ri";
 import { RiZoomOutLine } from "react-icons/ri";
 import ButtonAdd from './ButtonAdd';
-import { FaLayerGroup } from "react-icons/fa";
 import Carousel from './Carousel';
+
+import Layer from './Layer';
 const Main = () => {
  
 
   return (
     <div className='main'>
-      <Map  className="map_page"/> 
+      <Map  className="map_page" /> 
       <Search/>
       <ButtonAdd/>
       <div className='zoom'>
@@ -24,12 +25,11 @@ const Main = () => {
          <FaBell className='icon_note'/>
          <span>0</span>
       </div>
-       <div className="layer_map">
-         <FaLayerGroup  className='layer_icon'/>
-       </div>
+      <Layer/>
       <Carousel/>
     </div>
   );
 }
+
 
 export default Main
