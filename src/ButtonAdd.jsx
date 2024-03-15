@@ -14,13 +14,13 @@ const ButtonAdd = () => {
        <div className="menu">
         
          <Link to="" className="add_line">
-            <GiPathDistance className='icon_path'/>
             <span>مسار</span>
+            <GiPathDistance className='icon_path'/>
          </Link>
 
          <Link to="/Traffic-Control/Add" className="add_car">
-            <MdDirectionsBusFilled className='icon_car'/>
             <span>مركبة</span>
+            <MdDirectionsBusFilled className='icon_car'/>
          </Link>
 
        </div>

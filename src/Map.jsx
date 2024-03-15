@@ -4,12 +4,14 @@ import { MapContainer, TileLayer ,Polyline,Marker} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './map.css';
 
-import 'leaflet-compass/dist/leaflet-compass.min.css';
-import 'leaflet-compass/dist/leaflet-compass.min.js';
+
 
 import site from './assets/3d-map (2).png';
 import bus from './assets/bus.png';
 import { Icon } from 'leaflet';
+
+
+
 
 const Map = () => {
 const posation = [34.7325,36.7367];
@@ -54,15 +56,15 @@ const route = [[34.7325,36.7367],
 
 return (
   <div className='map'>
-    <MapContainer  style={{ height: "100%", width: "100%" }}  center={center} zoom={11} zoomControl={false} >
+    <MapContainer  style={{ height: "100%", width: "100%" }}  center={center} zoom={5} zoomControl={false} >
       <TileLayer  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
         
       {/* <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="Esri"/> */}
    
-    <Polyline positions={route} pathOptions={{color:"#0f172a"}}/>
+    <Polyline positions={route} pathOptions={{color:"#009c00"}}/>
     
 
-    <Marker position={posation} icon={customIcon}>
+    <Marker className="type_car" position={posation} icon={customIcon}>
        
     </Marker>
 

@@ -17,10 +17,13 @@ const Main = () => {
       <Map  className="map_page" /> 
       <Search/>
       <ButtonAdd/>
-      <div className='zoom'>
+
+
          <RiZoomInLine className='zoom_in' />
          <RiZoomOutLine className='zoom_out'/>
-      </div>
+     
+
+
       <Layer/>
       <Carousel/>
     </div>
