@@ -22,6 +22,7 @@ color: var(--back);
  width: 3.2rem;
  height: 3.2rem;
  padding: 0.7rem;
+ z-index: 9999;
  cursor: pointer;
  transition: all .3s linear;
 }
@@ -36,6 +37,7 @@ color: var(--back);
      width: 3.2rem;
      height: 3.2rem;
      padding: 0.7rem;
+     z-index: 9999;
      cursor: pointer;
      transition: all .3s linear;
 }

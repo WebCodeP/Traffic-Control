@@ -13,12 +13,12 @@ const ButtonAdd = () => {
        <IoMdAddCircleOutline className='add_line'/>
        <div className="menu">
         
-         <Link to="" className="add_line">
+         <Link to="/Traffic-Control/AddPath" className="add_line">
             <span>مسار</span>
             <GiPathDistance className='icon_path'/>
          </Link>
 
-         <Link to="/Traffic-Control/Add" className="add_car">
+         <Link to="/Traffic-Control/AddCar" className="add_car">
             <span>مركبة</span>
             <MdDirectionsBusFilled className='icon_car'/>
          </Link>
