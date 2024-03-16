@@ -30,7 +30,7 @@ function openMenu()
          <HiOutlineXMark className='cansel_icon'/>
       </div>
       <hr />
-      <div className='message'> قم بالنقر على الخريطة للتحديد نقاط المسار المراد رسمه</div>
+      <div className='message'> قم بالنقر على الخريطة للتحديد نقاط المسار المراد رسمه ثم قم بتحديد اسم مميز للمسار</div>
       <input type="text" name="" id="" placeholder='اسم المسار' className='path_name'/>
       <div className="addpath"><span>اضافة المسار</span><MdOutlineAdd className='plus_icon'/></div>
       <div className="delpath"><span>حذف المسار</span><RiDeleteBin6Line className='minus_icon'/></div>
