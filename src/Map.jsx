@@ -6,7 +6,6 @@ import './map.css';
 
 
 
-import site from './assets/3d-map (2).png';
 import bus from './assets/bus.png';
 import { Icon } from 'leaflet';
 

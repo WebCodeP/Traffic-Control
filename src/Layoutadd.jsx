@@ -35,6 +35,7 @@ function openMenu()
       <div className="addpath"><span>اضافة المسار</span><MdOutlineAdd className='plus_icon'/></div>
       <div className="delpath"><span>حذف المسار</span><RiDeleteBin6Line className='minus_icon'/></div>
       <div className="back"><span>التراجع عن اخر نقطة</span><RiArrowGoBackFill className='icon_for'/></div>
+      <div className='add_car'><span>لاضافة عربة انقر على</span><Link className='link' to='/Traffic-Control/AddCar'>اضافة عربة</Link></div>
     </div>
     </>
   )
