@@ -15,7 +15,7 @@
     top:6rem;
     left:1rem;
     cursor: pointer;
-    background-color: white;
+    background-color:#17223d;
     height: 3.2rem;
     width: 3.2rem;
     color: var(--back);
@@ -31,6 +31,7 @@
 .add_button .add_line {
     font-size: 1.8rem;
     font-weight: 600;
+    color: white;
 }
 
 .add_button .menu {
