@@ -20,8 +20,6 @@ const Main = () => {
          <RiZoomInLine className='zoom_in'/>
          <RiZoomOutLine className='zoom_out'/>
      
-
-
       <Layer/>
       <Carousel/>
     </div>

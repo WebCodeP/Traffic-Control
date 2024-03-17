@@ -12,7 +12,7 @@ import { IoMdSettings } from "react-icons/io";
 import { IoIosMore } from "react-icons/io";
 
 const Carousel = () => {
-  const carousel = useRef();
+const carousel = useRef();
 const [width , setWidth] = useState(0);
 useEffect(()=>{
   setWidth(carousel.current.offsetWidth -carousel.current.scrollWidth );

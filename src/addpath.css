@@ -8,15 +8,32 @@
 .drop_menu {
     position: fixed;
     z-index: 999999;
-    top: calc(100% - 8rem);
+    top: calc(100% - 2rem);
     width: 100%;
     background-color:#17223d ;
-    min-height:8rem;
+    height:18rem;
     scroll-behavior: smooth;
     border-radius: 0.8rem 0.8rem 0rem 0rem ;
 }
+.drop_menu .icon {
+    height: 2rem;
+    padding-left: 2rem;
+    
+}
+.drop_menu .icon .up {
+   font-size: 1.6rem;
+   color: white;
+   font-weight: 500;
+   padding-top:0.2rem;
+}
+.drop_menu .icon .down {
+   font-size: 1.7rem;
+   color: white;
+   font-weight: 500;
+   padding-top:0.2rem;
+   margin-left: 1rem;
+}
 .drop_menu .title {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,16 +49,19 @@
     color: white;
     
 }
+.drop_menu .scroll {
+    height: 12rem;
+    overflow-y:scroll;
+}
 
-
-.drop_menu  .content {
+.drop_menu .scroll .content {
     padding: 0.6rem 0rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.2rem;
 }
-.drop_menu  .content span{
+.drop_menu .scroll .content span{
     display: inline-block;
     width: 50%;
     background-color: #192b57;
@@ -51,7 +71,7 @@
     color: white;
 }
 
-.drop_menu  .content span:hover {
+.drop_menu .scroll .content span:hover {
     background-color: #17223dbd;
 }
 

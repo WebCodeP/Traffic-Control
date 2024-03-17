@@ -6,8 +6,8 @@ import 'leaflet/dist/leaflet.js'
 import Layoutadd from './Layoutadd';
 import site from './assets/3d-map (2).png';
 import { Icon } from 'leaflet';
-
-
+import { FiArrowUp } from "react-icons/fi";
+import { FiArrowDown } from "react-icons/fi";
 const Addpath = () => {
 
 const mapRef = useRef(null);
@@ -38,16 +38,20 @@ if(mapRef.current){
         </MapContainer>
         <Layoutadd/>
         <div className='drop_menu'>
+          <div className='icon'><FiArrowUp className='up'/><FiArrowDown className='down'/></div>
           <div className='title'>
               <span>خط الطول </span>
               <span>خط العرض</span>
           </div>
-          {point && point.map((po , index)=>(
-                     <div key={index} className='content'>
-                          <span>{po[0]}</span>
-                          <span>{po[1]}</span>
-                     </div>
-          ))}
+          <div className="scroll">
+                  {point && point.map((po , index)=>(
+                    
+                            <div key={index} className='content'>
+                                  <span>{po[0]}</span>
+                                  <span>{po[1]}</span>
+                            </div>
+                  ))}
+          </div>
         </div>
     </div>
   )
