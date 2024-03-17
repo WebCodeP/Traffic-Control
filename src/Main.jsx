@@ -2,7 +2,6 @@ import React from 'react';
 import Map from './Map';
 import './main.css';
 import Search from './Search';
-import { FaBell } from "react-icons/fa";
 import { RiZoomInLine } from "react-icons/ri";
 import { RiZoomOutLine } from "react-icons/ri";
 import ButtonAdd from './ButtonAdd';
@@ -10,7 +9,6 @@ import Carousel from './Carousel';
 
 import Layer from './Layer';
 const Main = () => {
- 
 
   return (
     <div className='main'>
@@ -19,7 +17,7 @@ const Main = () => {
       <ButtonAdd/>
 
 
-         <RiZoomInLine className='zoom_in' />
+         <RiZoomInLine className='zoom_in'/>
          <RiZoomOutLine className='zoom_out'/>
      
 

@@ -20,8 +20,9 @@ const customIcon = new Icon({
 //end icon
 if(mapRef.current){
   mapRef.current.on("click",(event)=>{
-     const newArray = [event.latlng.lat,event.latlng.lng];
-     setPoint([...point,newArray]);
+
+     const newarray =[event.latlng.lat,event.latlng.lng];
+     setPoint([...point,newarray]);
   });
 }
 
@@ -32,10 +33,22 @@ if(mapRef.current){
               <TileLayer   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
               {/* <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="Esri"/> */}
 
-             {point && point.map((place)=>(<Marker className="type_car" position={place} icon={customIcon}></Marker> ))}
+             {point && point.map((place)=>(<Marker  className="type_car" position={place} icon={customIcon}></Marker> ))}
         
         </MapContainer>
         <Layoutadd/>
+        <div className='drop_menu'>
+          <div className='title'>
+              <span>خط الطول </span>
+              <span>خط العرض</span>
+          </div>
+          {point && point.map((po)=>(
+                     <div className='content'>
+                          <span>{po[0]}</span>
+                          <span>{po[1]}</span>
+                     </div>
+          ))}
+        </div>
     </div>
   )
 }

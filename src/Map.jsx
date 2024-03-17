@@ -5,11 +5,8 @@ import 'leaflet/dist/leaflet.css';
 import './map.css';
 
 
-
 import bus from './assets/bus.png';
 import { Icon } from 'leaflet';
-
-
 
 
 const Map = () => {
@@ -51,20 +48,18 @@ const route = [[34.7325,36.7367],
  [34.73256,36.73685]];
   
   const [center, setCenter] = useState([34.7325,36.7367]);
+  const [zo , setZo] = useState(5);
 
 
 return (
   <div className='map'>
-    <MapContainer  style={{ height: "100%", width: "100%" }}  center={center} zoom={5} zoomControl={false} >
+    <MapContainer  style={{ height: "100%", width: "100%" }}  center={center} zoom={zo} zoomControl={false} >
       <TileLayer  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
         
       {/* <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="Esri"/> */}
    
     <Polyline positions={route} pathOptions={{color:"#009c00"}}/>
-    
-
     <Marker className="type_car" position={posation} icon={customIcon}>
-       
     </Marker>
 
    
