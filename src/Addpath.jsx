@@ -33,7 +33,7 @@ if(mapRef.current){
               <TileLayer   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
               {/* <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="Esri"/> */}
 
-             {point && point.map((place)=>(<Marker  className="type_car" position={place} icon={customIcon}></Marker> ))}
+             {point && point.map((place ,index)=>(<Marker key={index}  className="type_car" position={place} icon={customIcon}></Marker> ))}
         
         </MapContainer>
         <Layoutadd/>
@@ -42,8 +42,8 @@ if(mapRef.current){
               <span>خط الطول </span>
               <span>خط العرض</span>
           </div>
-          {point && point.map((po)=>(
-                     <div className='content'>
+          {point && point.map((po , index)=>(
+                     <div key={index} className='content'>
                           <span>{po[0]}</span>
                           <span>{po[1]}</span>
                      </div>
