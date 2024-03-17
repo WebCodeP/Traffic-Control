@@ -33,7 +33,7 @@ if(mapRef.current){
               <TileLayer   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
               {/* <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="Esri"/> */}
 
-             {point && point.map((place ,index)=>(<Marker key={index}  className="type_car" position={place} icon={customIcon}></Marker> ))}
+              {point.map((place ,index)=>(<Marker key={index}  className="type_car" position={place} icon={customIcon}></Marker> ))}
         
         </MapContainer>
         <Layoutadd/>
