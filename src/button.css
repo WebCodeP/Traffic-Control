@@ -43,7 +43,6 @@
     background-color:white;
     border-radius: 0.3rem;
     transition: all 0.3s linear;
-    display: none;
     box-shadow: 1px 1px 2px rgb(0,0,0,0.2);
 }
 
