@@ -8,6 +8,7 @@ import site from './assets/3d-map (2).png';
 import { Icon } from 'leaflet';
 import { FiArrowUp } from "react-icons/fi";
 import { FiArrowDown } from "react-icons/fi";
+import { MdOutlineDesktopWindows } from 'react-icons/md';
 const Addpath = () => {
 
 const mapRef = useRef(null);
@@ -26,6 +27,19 @@ if(mapRef.current){
   });
 }
 
+const handleButtonClick = () =>{
+  const newArray = point.slice(0,-1);
+  setPoint(newArray);
+}
+ 
+const [up , setUp] = useState("calc(100% - 2rem)")
+const upWindow = () =>{
+  setUp("calc(100% - 18rem)");
+}
+
+const downWindow = () => {
+  setUp("calc(100% - 2rem)");
+}
 
   return (
     <div className='add_path_container'>
@@ -34,11 +48,11 @@ if(mapRef.current){
               {/* <TileLayer url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="Esri"/> */}
 
               {point.map((place ,index)=>(<Marker key={index}  className="type_car" position={place} icon={customIcon}></Marker> ))}
-        
+              
         </MapContainer>
-        <Layoutadd/>
-        <div className='drop_menu'>
-          <div className='icon'><FiArrowUp className='up'/><FiArrowDown className='down'/></div>
+        <Layoutadd onClick={handleButtonClick}/>
+        <div className='drop_menu' style={{top:up}}>
+          <div className='icon'><FiArrowUp className='up' onClick={upWindow}/><FiArrowDown className='down'onClick={downWindow}/></div>
           <div className='title'>
               <span>خط الطول </span>
               <span>خط العرض</span>
